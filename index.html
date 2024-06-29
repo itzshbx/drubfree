@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دروبفري</title>
+    <title>دروبفري - أفضل المواقع المجانية</title>
+    <meta name="description" content="دروبفري يجمع أفضل المواقع المجانية في تجميعات مختارة. كل الأدوات التي تحتاجها لاستخدام ملفات PDF، في متناول يدك. كلها مجانية 100% وسهلة الاستخدام!">
+    <meta name="keywords" content="مواقع مجانية, دروبفري, أدوات PDF, دمج PDF, تقسيم PDF, ضغط PDF, تحويل PDF, تدوير PDF, فتح PDF, وضع علامات مائية على PDF">
+    <meta name="author" content="دروبفري">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
         * {
             font-family: "Rubik", sans-serif;
         }
@@ -20,15 +23,12 @@
         .card {
             background-color: #1c1c1c;
             border: none;
-            height: 100%; /* Ensure all cards are the same height */
-            display: flex; /* Use flexbox for alignment */
-            flex-direction: column; /* Stack items vertically */
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         .card-title, .card-text {
             color: #ffffff;
-        }
-        .card-text {
-            flex: 1; /* Allow the text to expand vertically */
         }
         .btn-primary {
             background-color: #007bff;
@@ -56,50 +56,63 @@
             border: 1px solid #1c1c1c;
         }
         .dark-mode-input {
-            background-color: #343a40; /* Dark background color */
-            color: #ffffff; /* Light text color */
-            border-color: #343a40; /* Matching border color */
-            width: 300px; /* Adjust width as needed */
+            background-color: #343a40;
+            color: #ffffff;
+            border-color: #343a40;
+            width: 300px;
         }
-
-        /* Center align the search bar */
         .search-container {
             text-align: center;
             margin-top: 20px;
         }
-        
+        @media (max-width: 768px) {
+            .dark-mode-input {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+            .navbar-nav {
+                justify-content: center;
+            }
+            .nav-link img {
+                margin: 0 5px;
+            }
+        }
     </style>
 </head>
 <body>
-    
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
-
+        <div class="container">
+            <form class="form-inline">
+                <input id="searchInput" class="form-control dark-mode-input" type="search" placeholder="ابحث عن اسم الموقع هنا" aria-label="Search">
+            </form>
             <ul class="navbar-nav ml-auto">
-                <form class="form">
-                    <input id="searchInput" class="form-control mr-sm-2 dark-mode-input" type="search" placeholder="ابحث  عن اسم الموقع هنا" aria-label="Search">
-                </form>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/twitterx--v1.png" alt="twitterx--v1"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/instagram-new.png" alt="instagram"/></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/0056b3/whatsapp.png" alt="whatsapp"/></a>
+                </li>
             </ul>
+        </div>
     </nav>
 
     <!-- Main Content -->
     <div class="container mt-4">
         <div class="text-center">
-            <h1> دروبفري</h1>
-            <p class="lead mt-4"> 
+            <h1>دروبفري</h1>
+            <p class="lead mt-4">
                 دروبفري يجمع أفضل المواقع المجانية في تجميعات مختارة.
             </p>
         </div>
 
-        <!-- Search Bar -->
-        <div class="search-container">
-            
-        </div>
-        
+        <div class="search-container"></div>
+
         <hr style="background-color: #0056b3;">
-        <div id="card-container" class="row mt-4 text-center">
-            <!-- Cards go here -->
-        </div>
+        <div id="card-container" class="row mt-4 text-center"></div>
 
         <!-- Pagination Controls -->
         <nav aria-label="Page navigation example">
@@ -112,16 +125,15 @@
         <div class="container">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/twitterx--v1.png" alt="twitterx--v1"/></a>
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/twitterx--v1.png" alt="twitterx--v1"/></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/instagram-new.png" alt="twitterx--v1"/></a>
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/material/24/0056b3/instagram-new.png" alt="instagram"/></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/0056b3/whatsapp.png" alt="whatsapp"/>
-                  </a>
+                    <a class="nav-link" href="#"><img width="20" height="20" src="https://img.icons8.com/ios-glyphs/30/0056b3/whatsapp.png" alt="whatsapp"/></a>
                 </li>
-              </ul>
+            </ul>
         </div>
     </footer>
 
@@ -133,13 +145,13 @@
         const cards = [
             {
                 title: 'ChatGPT',
-                text: 'ذكاء اصطناعي يفهم ويجيب على أسئلتك بدقة. ',
+                text: 'ذكاء اصطناعي يفهم ويجيب على أسئلتك بدقة.',
                 link: 'https://chatgpt.com/',
                 image: 'assets/chatgpt.png'
             },
             {
                 title: 'You.com',
-                text: 'تمتع بمساعد بحث ذكي شخصي مع روبوت الدردشة من You.com. ',
+                text: 'تمتع بمساعد بحث ذكي شخصي مع روبوت الدردشة من You.com.',
                 link: 'https://you.com/',
                 image: 'assets/you.png'
             },
@@ -188,7 +200,7 @@
 
         function filterCards(searchText) {
             const filteredCards = cards.filter(card => {
-                return card.title.includes(searchText) || card.text.includes(searchText);
+                return card.title.toLowerCase().includes(searchText.toLowerCase()) || card.text.toLowerCase().includes(searchText.toLowerCase());
             });
             return filteredCards;
         }
